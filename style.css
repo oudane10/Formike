@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+* 
+{
+	margin: 0; padding: 0;
+	font-family: 'Poppins', sans-serif;
+	box-sizing: border-box;
+	text-decoration: none;
+	outline: none;
+	border: none;
+}
+html 
+{
+	font-size: 62.5%;
+}
+body 
+{
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+section
+{
+	position: relative;
+	width: 100%;
+	padding: 2em 7%;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+}
+section.about h2 
+{
+	font-size: 2.5em;
+	font-weight: 500;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+section.about .column
+{
+	margin-top: 1em;
+	overflow: hidden;
+}
+section.about .container 
+{
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1.5em;
+}
+section.about .container .contentBx 
+{
+	position: relative;
+	padding: .5em;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	text-align: center;
+}
+section.about .container .contentBx .imageBx 
+{
+	position: relative;
+	padding: .5em;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+}
+section.about .container .contentBx p.sci 
+{
+	font-size: 1.5em;
+	line-height: 1.8;
+	color: #666;
+}
+section.about .container .contentBx .imageBx  h3 
+{
+	font-size: 1.8em;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #333;
+	padding-bottom: 1em;
+}
+section.about .container .contentBx .imageBx .imgBx 
+{
+	position: relative;
+	width: 300px;
+	height: 350px;
+	overflow: hidden;
+	margin-bottom: 1em;
+}
+section.about .container .contentBx .imageBx .imgBx  img 
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+section.about .container .contentBx .imageBx span 
+{
+	font-size: 1.5em;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+
+@media (max-width: 991px) 
+{
+	html 
+	{
+		font-size: 55%;
+	}
+	section
+	{
+		padding: 2em 5%;
+	}
+	section.about .container 
+	{
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+@media (max-width: 768px) 
+{
+	section
+	{
+		padding: 2em;
+	}
+	section.about .container 
+	{
+		grid-template-columns: 1fr;
+	}
+	section.about .container .contentBx .imageBx .imgBx 
+	{
+		width: 90vw;
+	}
+}
